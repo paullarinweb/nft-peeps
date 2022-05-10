@@ -1,0 +1,29 @@
+@import "vars";
+
+.text {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.btn-red {
+    text-transform: capitalize;
+    border-radius: 12px;
+    min-width: 135px;
+    min-height: 45px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    background: $red;
+    display: inline-flex;
+    font-weight: 700;
+    transition: background 0.3s linear;
+    &:hover {
+        background: #ff7590;
+    }
+}
+
+.white {
+    background: #fff;
+    transition: all 0.5s linear;
+}

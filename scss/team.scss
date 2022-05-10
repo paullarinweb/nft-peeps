@@ -1,0 +1,106 @@
+@import "vars";
+@import "media";
+
+.team {
+    // .team__main
+
+    &__main {
+        background: $pink;
+        padding: 2rem 0 1rem 0;
+        @include for-tablet-landscape-up {
+            padding: 120px 0 40px 0;
+        }
+    }
+
+    // .team__header
+
+    &__header {
+        color: $black;
+        font-weight: 700;
+        span {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 4px;
+            &:before {
+                content: url("data:image/svg+xml,%3Csvg width='34' height='36' viewBox='0 0 34 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.16664 7.46412C6.34027 4.1246 9.53203 1.0924 13.2162 0.330318C16.9005 -0.453146 21.0773 1.0335 24.9084 3.22295C28.7394 5.41241 32.1821 8.32573 32.9415 11.7952C33.6796 15.2645 31.6918 19.311 29.9815 23.2101C28.2499 27.1089 26.7958 30.8817 23.9499 33.1897C21.1042 35.4763 16.8455 36.2981 12.6828 35.7308C8.49863 35.1848 4.41043 33.2499 2.24537 30.0901C0.0804808 26.9089 -0.161278 22.5028 0.316772 18.4872C0.79499 14.4502 1.99301 10.8037 4.16664 7.46412Z' fill='%23F7859C'/%3E%3C/svg%3E%0A");
+                width: 34px;
+                height: 36px;
+                position: relative;
+                display: inline-block;
+                top: -7px;
+                left: 20px;
+                z-index: 0;
+            }
+            p {
+                z-index: 1;
+            }
+        }
+        h2 {
+            line-height: calc(58 / 65 * 1);
+            font-size: 30px;
+            @include for-tablet-portrait-up {
+                font-size: 4.52vw;
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    // .team__items
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    // .team__item
+
+    &__item {
+        flex: 0 1 33.333333%;
+        text-align: center;
+        margin: 20px;
+        @include for-tablet-landscape-up {
+            margin: 0 0px 85px 0px;
+        }
+    }
+
+    &__img {
+        &::before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            top: 300px;
+            left: 0;
+            width: 293px;
+            height: 33px;
+            background: url("../images/team/under-person.svg") 0 0 no-repeat;
+            z-index: 0;
+        }
+        img {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 24px;
+        }
+    }
+    // .team__info
+
+    &__info {
+        color: $black;
+        font-weight: 700;
+        font-family: Montserrat;
+        span {
+            font-size: 18px;
+            line-height: calc(16 / 18 * 1);
+        }
+        h3 {
+            margin-top: 6px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: calc(32 / 36 * 1);
+            @include for-phone-only {
+                font-size: 24px;
+            }
+        }
+    }
+}

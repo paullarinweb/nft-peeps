@@ -1,0 +1,197 @@
+.collection {
+  padding: 4rem 0;
+}
+
+@media (min-width: 900px) {
+  .collection {
+    padding: 100px 0;
+  }
+}
+
+.collection__header {
+  color: #222222;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .collection__header {
+    margin-bottom: 90px;
+  }
+}
+
+.collection__header span {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.collection__header span:before {
+  content: url("data:image/svg+xml,%3Csvg width='34' height='36' viewBox='0 0 34 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.16664 7.46382C6.34027 4.12431 9.53203 1.09211 13.2162 0.330028C16.9005 -0.453436 21.0773 1.03321 24.9084 3.22266C28.7394 5.41212 32.1821 8.32544 32.9415 11.7949C33.6796 15.2642 31.6918 19.3107 29.9815 23.2098C28.2499 27.1086 26.7958 30.8814 23.9499 33.1894C21.1042 35.476 16.8455 36.2977 12.6828 35.7305C8.49863 35.1845 4.41043 33.2496 2.24537 30.0898C0.0804808 26.9086 -0.161278 22.5025 0.316772 18.4868C0.79499 14.4498 1.99301 10.8033 4.16664 7.46382Z' fill='%23FFDBB4'/%3E%3C/svg%3E%0A");
+  width: 34px;
+  height: 36px;
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  left: 19px;
+  z-index: -1;
+}
+
+.collection__header h2 {
+  font-weight: 700;
+  font-size: 4.53vw;
+  line-height: calc(58 / 65 * 1);
+}
+
+@media (max-width: 599px) {
+  .collection__header h2 {
+    font-size: 30px;
+  }
+}
+
+.collection__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .collection__info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.collection__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 1200px) {
+  .collection__items {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 600px) {
+  .collection__items {
+    min-width: 450px;
+  }
+}
+
+.collection__item {
+  display: inline-block;
+  max-width: 80%;
+}
+
+@media (min-width: 1200px) {
+  .collection__item {
+    max-width: 375px;
+  }
+}
+
+.collection__item:not(:last-child) {
+  margin-bottom: 26px;
+  border-bottom: 1px solid #404756;
+}
+
+.collection__item:not(:last-child) p {
+  margin-bottom: 32px;
+}
+
+.collection__item article {
+  width: 100%;
+}
+
+.collection__item article h3 {
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: calc(22 / 24 * 1);
+}
+
+.collection__item article p {
+  color: #404756;
+}
+
+@media (min-width: 1200px) {
+  .collection__item article p {
+    max-width: 332px;
+  }
+}
+
+.collection__info-img {
+  text-align: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 900px) {
+  .collection__info-img {
+    margin-left: 85px;
+    text-align: left;
+  }
+}
+
+.collection__info-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 900px) {
+  .collection__info-img img {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 599px) {
+  .collection__info-img img {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .collection__info-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}

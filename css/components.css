@@ -1,0 +1,37 @@
+.text {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.btn-red {
+  text-transform: capitalize;
+  border-radius: 12px;
+  min-width: 135px;
+  min-height: 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: white;
+  background: #f7859c;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
+
+.btn-red:hover {
+  background: #ff7590;
+}
+
+.white {
+  background: #fff;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
