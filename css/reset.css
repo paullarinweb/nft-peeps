@@ -85,6 +85,13 @@ h6 {
   font-family: "Montserrat";
 }
 
+@media (min-width: 1800px) {
+  h1,
+  h2 {
+    font-size: 84px !important;
+  }
+}
+
 ._container {
   max-width: 1310px;
   margin: 0 auto;

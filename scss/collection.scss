@@ -82,6 +82,9 @@
         @include for-desktop-up {
             max-width: 375px;
         }
+        @include for-phone-only {
+            max-width: 95%;
+        }
         &:not(:last-child) {
             margin-bottom: 26px;
             border-bottom: 1px solid $gray;
@@ -123,6 +126,7 @@
             }
             @include for-phone-only {
                 max-width: 450px;
+                width: 95%;
             }
         }
         order: 1;

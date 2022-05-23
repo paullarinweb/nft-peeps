@@ -90,6 +90,9 @@
             font-weight: 700;
             font-size: 36px;
             line-height: calc(32 / 36 * 1);
+            @include for-phone-only {
+                font-size: 32px;
+            }
         }
         p {
             color: $gray;
@@ -124,11 +127,19 @@
     // .content__img
 
     &__img {
+        @include for-phone-only {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         img {
             width: 100%;
             object-fit: contain;
             @include for-tablet-landscape-up {
                 width: auto;
+            }
+            @include for-phone-only {
+                width: 75%;
             }
         }
     }

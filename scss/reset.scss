@@ -1,5 +1,5 @@
 @import "vars";
-
+@import "media";
 * {
     padding: 0;
     margin: 0;
@@ -72,6 +72,12 @@ h6 {
     font-size: inherit;
     font-weight: 400;
     font-family: "Montserrat";
+}
+h1,
+h2 {
+    @include for-big-desktop-up {
+        font-size: 84px !important;
+    }
 }
 
 ._container {

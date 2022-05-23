@@ -125,6 +125,12 @@
   }
 }
 
+@media (max-width: 599px) {
+  .collection__item {
+    max-width: 95%;
+  }
+}
+
 .collection__item:not(:last-child) {
   margin-bottom: 26px;
   border-bottom: 1px solid #404756;
@@ -185,6 +191,7 @@
 @media (max-width: 599px) {
   .collection__info-img img {
     max-width: 450px;
+    width: 95%;
   }
 }
 

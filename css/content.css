@@ -107,6 +107,12 @@
   line-height: calc(32 / 36 * 1);
 }
 
+@media (max-width: 599px) {
+  .content__info h3 {
+    font-size: 32px;
+  }
+}
+
 .content__info p {
   color: #404756;
 }
@@ -144,6 +150,20 @@
   fill: #ff8961;
 }
 
+@media (max-width: 599px) {
+  .content__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .content__img img {
   width: 100%;
   -o-object-fit: contain;
@@ -153,6 +173,12 @@
 @media (min-width: 900px) {
   .content__img img {
     width: auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .content__img img {
+    width: 75%;
   }
 }
 

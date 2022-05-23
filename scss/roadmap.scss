@@ -26,6 +26,11 @@
         }
     }
 
+    &__items {
+        @include for-phone-only {
+            margin-top: 3rem;
+        }
+    }
     // .roadmap__item
 
     &__item {

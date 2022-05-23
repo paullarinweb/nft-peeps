@@ -45,9 +45,7 @@
             font-size: 6.74vw;
             line-height: calc(88 / 97 * 1);
             font-weight: 700;
-            @include for-big-desktop-up {
-                font-size: 90px;
-            }
+
             @include for-phone-only {
                 font-size: 30px;
             }

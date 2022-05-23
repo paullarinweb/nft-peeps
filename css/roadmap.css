@@ -31,6 +31,12 @@
   left: 20px;
 }
 
+@media (max-width: 599px) {
+  .roadmap__items {
+    margin-top: 3rem;
+  }
+}
+
 .roadmap__item {
   display: -webkit-box;
   display: -ms-flexbox;
